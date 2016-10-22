@@ -3,7 +3,6 @@ var enemy;
 var fighterChosen = false;
 var enemyChosen = false;
 var playerDead = false;
-var enemyDead = false;
 var enemiesLeft = 3;
 var FighterOne;
 var FighterTwo;
@@ -210,29 +209,27 @@ function attack() {
             player.health -= enemy.counter;
             updateHealth();
         } else if (enemy.health <= 0) {
-            enemyDead = true;
             enemiesLeft--;
             $('#'+enemy.name).remove();
             enemyChosen = false;
-            chooseEnemy();
-            enemyDead = false;
             
             if (enemiesLeft == 0) {
                 showRestartBtn();
             }   
         }
-    } else {
-        playerDead = true;
-        showRestartBtn();
+        if (player.health <= 0){
+            showRestartBtn();
+        } 
+    }else {
+        fighterChosen = false;
     }
+    
     fightLog();
 }
 
 $('#attackBtn').on("click", function() {
     if (fighterChosen && enemyChosen) {
-        if (!enemyDead && !playerDead) {
             attack();
-        }
     }
 });
 
