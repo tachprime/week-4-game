@@ -2,7 +2,6 @@ var player;
 var enemy;
 var fighterChosen = false;
 var enemyChosen = false;
-var playerDead = false;
 var enemiesLeft = 3;
 var FighterOne;
 var FighterTwo;
