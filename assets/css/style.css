@@ -48,3 +48,14 @@ body {
 #restartBtn {
     background-color: #000000;
 }
+
+.log {
+    max-width: 50%;
+    background-color: #000;
+    color: green;
+    float: right;
+    font-size: 1.2em;
+    padding: 5px;
+    position: relative;
+    top: -150px;
+}

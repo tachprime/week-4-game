@@ -25,12 +25,12 @@ function startFighters() {
         FighterTwo = {
             name: "Michealangelo",
             health: 100,
-            attack: 10,
+            attack: 12,
             counter: 5,
             img: "assets/images/michealangelo.gif",
             
             increaseAttack: function() {
-                this.attack += 10;
+                this.attack += 12;
             }
         };
     
