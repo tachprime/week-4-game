@@ -57,10 +57,10 @@ body {
     background-color: #000000;
 }
 
-.log {
+.fightLog {
     max-width: 50%;
     background-color: #000;
-    color: green;
+    color: #63ff01;
     float: right;
     font-size: 1.2em;
     padding: 5px;
