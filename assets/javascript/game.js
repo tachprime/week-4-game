@@ -144,8 +144,6 @@ function moveToDefenderArea() {
 function reset() {
     fighterChosen = false;
     enemyChosen = false;
-    playerDead = false;
-    enemyDead = false;
     enemiesLeft = 3;
     fightersList = [];
     $('.fighter-card').remove();
@@ -174,7 +172,8 @@ function updateHealth() {
 }
 
 function fightLog() {
-    var atk = player.name + " Attacked " + enemy.name + " for " + player.attack + " damage. " + enemy.name + " counter hits for " + enemy.counter;
+    var atk = player.name + " Attacked " + enemy.name + " for " + player.attack + " damage. " 
+    + enemy.name + " counter hits for " + enemy.counter;
     var loss = "You lost hit restart to try again";
     var won = "You won congratualtions";
     var log = $('<p>');
