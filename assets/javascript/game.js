@@ -137,7 +137,7 @@ function moveToEnemyArea() {
 }
 
 function moveToDefenderArea() {
-    $("#"+ enemy.name).addClass('figther-defender');
+    $("#"+ enemy.name).addClass('fighter-defender');
     $("#"+ enemy.name).appendTo('.defenderArea');
 }
 

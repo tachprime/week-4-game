@@ -36,6 +36,14 @@ body {
     height: 100px;
 }
 
+.fighter-enemy {
+    background-color: black;
+}
+
+.fighter-defender {
+    background-color: red;
+}
+
 .defenderArea {
     padding: 10px;
 }
